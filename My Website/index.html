@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Consulting - Architecting High-Scale Cloud & AI Platforms</title>
+  
+  <!-- Fonts & CDN Utilities -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col bg-[#080e1d] text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- TOP NAVIGATION -->
+  <header class="sticky top-0 z-40 w-full border-b border-[#232b40]/60 glass-nav">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/25">AC</div>
+        <span class="text-xl font-bold tracking-tight text-white">Apex Consulting</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="index.html" class="text-blue-400 font-semibold transition-colors">Home</a>
+        <a href="solutions.html" class="hover:text-white transition-colors">Solutions</a>
+        <a href="case-studies.html" class="hover:text-white transition-colors">Case Studies</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all duration-200 shadow-md shadow-blue-600/30 flex items-center gap-2">
+          <span>Book Call</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN HERO SECTION -->
+  <main class="flex-1">
+    <section class="relative pt-24 pb-20 px-6 overflow-hidden">
+      <div class="absolute inset-0 hero-glow"></div>
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-xs font-semibold text-blue-300 mb-8 tracking-wide">
+          <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+          TRUSTED BY FORTUNE 500 LEADERS
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.15] mb-6">
+          Architecting <span class="bg-gradient-to-r from-blue-400 to-indigo-300 bg-clip-text text-transparent">High-Scale Cloud & AI</span> Platforms
+        </h1>
+        <p class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10">
+          We partner with enterprise technology leaders to modernize legacy core systems, deploy secure enterprise AI, and accelerate digital engineering velocity.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button onclick="openBookingModal()" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm shadow-xl shadow-blue-600/25 transition-all flex items-center justify-center gap-2">
+            <span>Schedule Architecture Audit</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+          <a href="case-studies.html" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-[#151b2b] hover:bg-[#1c2438] border border-[#232b40] text-slate-200 font-semibold text-sm transition-all flex items-center justify-center gap-2">
+            <i data-lucide="folder-kanban" class="w-4 h-4"></i>
+            <span>Explore Case Studies</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- METRICS BAR -->
+      <div class="max-w-5xl mx-auto mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-[#151b2b] border border-[#232b40]/80 text-center">
+          <div class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">Infrastructure Reliability</div>
+          <div class="text-3xl font-extrabold text-white mb-1">99.99%</div>
+          <div class="text-xs text-blue-400 flex items-center justify-center gap-1"><i data-lucide="zap" class="w-3.5 h-3.5"></i> Uptime SLA Guaranteed</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-[#151b2b] border border-[#232b40]/80 text-center">
+          <div class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">Measurable Impact</div>
+          <div class="text-3xl font-extrabold text-blue-400 mb-1">$140M+</div>
+          <div class="text-xs text-emerald-400 flex items-center justify-center gap-1"><i data-lucide="trending-up" class="w-3.5 h-3.5"></i> +38% Net Efficiency YoY</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-[#151b2b] border border-[#232b40]/80 text-center">
+          <div class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">Portfolio Reach</div>
+          <div class="text-3xl font-extrabold text-white mb-1">45+</div>
+          <div class="text-xs text-slate-400 flex items-center justify-center gap-1"><i data-lucide="globe" class="w-3.5 h-3.5"></i> Multi-Region Deployments</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE CAPABILITIES PREVIEW -->
+    <section class="py-16 px-6 max-w-7xl mx-auto border-t border-[#232b40]/40">
+      <div class="flex items-center justify-between mb-10">
+        <div>
+          <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Enterprise Stack</span>
+          <h2 class="text-2xl md:text-3xl font-bold mt-1 text-white">Core Capabilities</h2>
+        </div>
+        <a href="solutions.html" class="text-sm font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5">
+          View All Solutions <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-7 rounded-2xl bg-[#151b2b] border border-[#232b40]/80 hover:border-blue-500/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-5"><i data-lucide="cpu" class="w-6 h-6"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Enterprise AI & LLM Systems</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">Sub-microsecond semantic retrieval, deterministic agentic workflows, on-premise governance, and enterprise-grade fine-tuning.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="px-2.5 py-1 rounded-md bg-[#080e1d] border border-[#232b40] text-xs text-slate-300">Vector Sharding</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#080e1d] border border-[#232b40] text-xs text-slate-300">Guardrails</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#080e1d] border border-[#232b40] text-xs text-slate-300">&lt;18ms P99</span>
+          </div>
+        </div>
+        <div class="p-7 rounded-2xl bg-[#151b2b] border border-[#232b40]/80 hover:border-blue-500/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-5"><i data-lucide="network" class="w-6 h-6"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Cloud Native & Modernization</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">Zero-downtime microservice migrations, hardened Kubernetes clusters, and geo-distributed real-time event brokers.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="px-2.5 py-1 rounded-md bg-[#080e1d] border border-[#232b40] text-xs text-slate-300">3.8x Velocity</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#080e1d] border border-[#232b40] text-xs text-slate-300">Infra Cost -42%</span>
+          </div>
+        </div>
+        <div class="p-7 rounded-2xl bg-[#151b2b] border border-[#232b40]/80 hover:border-blue-500/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center mb-5"><i data-lucide="compass" class="w-6 h-6"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Strategic Tech Advisory</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">Board-level enterprise IT roadmaps, security compliance validation, vendor neutrality assessments, and technical due diligence.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="px-2.5 py-1 rounded-md bg-[#080e1d] border border-[#232b40] text-xs text-slate-300">Architecture Reviews</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#080e1d] border border-[#232b40] text-xs text-slate-300">FinOps</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA BANNER -->
+    <section class="py-16 px-6 max-w-7xl mx-auto">
+      <div class="p-8 md:p-12 rounded-3xl bg-gradient-to-r from-[#151b2b] to-blue-950/40 border border-[#232b40] flex flex-col md:flex-row items-center justify-between gap-8">
+        <div>
+          <span class="text-xs font-bold text-blue-400 uppercase tracking-widest flex items-center gap-1.5 mb-2"><i data-lucide="rocket" class="w-4 h-4"></i> Accelerate Transformation</span>
+          <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Ready to Modernize Your Infrastructure?</h3>
+          <p class="text-sm text-slate-300 max-w-xl">Speak directly with our Principal Architects. We review system bottlenecks, quantify ROI, and craft actionable deployment roadmaps.</p>
+        </div>
+        <button onclick="openBookingModal()" class="whitespace-nowrap px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm shadow-xl shadow-blue-600/30 transition-all flex items-center gap-2">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Get Started Today</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="border-t border-[#232b40]/60 py-8 px-6 bg-[#080e1d]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <p>© 2025 Apex Consulting. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="solutions.html" class="hover:text-white transition-colors">Solutions</a>
+        <a href="case-studies.html" class="hover:text-white transition-colors">Case Studies</a>
+        <a href="mailto:contact@apexconsulting.com" class="hover:text-white transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE BOOKING MODAL -->
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/70 backdrop-blur-md modal-backdrop">
+    <div class="relative w-full max-w-2xl bg-[#0f172a] border border-[#232b40] rounded-2xl shadow-2xl p-6 md:p-8 max-h-[90vh] overflow-y-auto modal-content">
+      <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- FORM STATE -->
+      <div id="modalFormContainer">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-12 h-12 rounded-full bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-blue-400">
+            <i data-lucide="user-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white">Schedule Strategic Consultation</h3>
+            <p class="text-xs text-slate-300">With Marcus Vance • Principal Systems Architect (30 Min Session)</p>
+          </div>
+        </div>
+
+        <form id="consultationForm" onsubmit="handleBookingSubmit(event)" class="space-y-5">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wide">1. Select Focus Area</label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="cursor-pointer border border-[#232b40] rounded-xl p-3 bg-[#151b2b] hover:border-blue-500 flex items-center gap-2 text-xs font-medium text-slate-200">
+                <input type="radio" name="topic" value="AI & LLM" checked class="text-blue-600 focus:ring-0">
+                Enterprise AI & LLM
+              </label>
+              <label class="cursor-pointer border border-[#232b40] rounded-xl p-3 bg-[#151b2b] hover:border-blue-500 flex items-center gap-2 text-xs font-medium text-slate-200">
+                <input type="radio" name="topic" value="Cloud Modernization" class="text-blue-600 focus:ring-0">
+                Cloud Architecture
+              </label>
+              <label class="cursor-pointer border border-[#232b40] rounded-xl p-3 bg-[#151b2b] hover:border-blue-500 flex items-center gap-2 text-xs font-medium text-slate-200">
+                <input type="radio" name="topic" value="Data Platform" class="text-blue-600 focus:ring-0">
+                Data Platform Engineering
+              </label>
+              <label class="cursor-pointer border border-[#232b40] rounded-xl p-3 bg-[#151b2b] hover:border-blue-500 flex items-center gap-2 text-xs font-medium text-slate-200">
+                <input type="radio" name="topic" value="Compliance & Security" class="text-blue-600 focus:ring-0">
+                Security & SOC2 Audit
+              </label>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Your Full Name</label>
+              <input required type="text" placeholder="Sarah Connor" class="w-full px-3.5 py-2.5 rounded-lg bg-[#080e1d] border border-[#232b40] text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Work Email</label>
+              <input required type="email" placeholder="sarah@enterprise.com" class="w-full px-3.5 py-2.5 rounded-lg bg-[#080e1d] border border-[#232b40] text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Company / Organization</label>
+              <input required type="text" placeholder="Global Dynamics Corp" class="w-full px-3.5 py-2.5 rounded-lg bg-[#080e1d] border border-[#232b40] text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-500">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Preferred Time Window</label>
+              <select class="w-full px-3.5 py-2.5 rounded-lg bg-[#080e1d] border border-[#232b40] text-sm text-white focus:outline-none focus:border-blue-500">
+                <option>Tomorrow - 10:00 AM EST</option>
+                <option>Tomorrow - 2:00 PM EST</option>
+                <option>Thu Oct 26 - 11:30 AM EST</option>
+                <option>Fri Oct 27 - 3:00 PM EST</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-blue-950/30 border border-blue-800/40 text-xs text-blue-300 flex items-center gap-2.5">
+            <i data-lucide="shield-check" class="w-5 h-5 text-blue-400 shrink-0"></i>
+            <span>Enterprise NDA automatically applied. Direct senior architect review within 24 business hours.</span>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-xl shadow-blue-600/30 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span>Confirm Consultation Booking</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- SUCCESS CONFIRMATION STATE -->
+      <div id="modalSuccessContainer" class="hidden text-center py-8">
+        <div class="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="check" class="w-8 h-8"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2">Consultation Scheduled!</h3>
+        <p class="text-sm text-slate-300 max-w-md mx-auto mb-6">A calendar invite and technical prep questionnaire have been dispatched to your email address.</p>
+        <button onclick="closeBookingModal()" class="px-6 py-2.5 rounded-xl bg-[#151b2b] hover:bg-[#1c2438] border border-[#232b40] text-sm font-semibold text-white">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- External JavaScript File -->
+  <script src="main.js"></script>
+</body>
+</html>
